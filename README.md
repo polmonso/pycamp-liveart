@@ -19,21 +19,32 @@ Install or connect to a supercollider server (**hard**). I installed 3.10 and it
 
 maybe I did this
 
-```
+```bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FABAEF95
 sudo add-apt-repository ppa:supercollider/ppa
 sudo apt-get update
 sudo apt-get install supercollider-ide
 ```
 
-The vscode extension FoxDot v0.0.5 **yasuyuky** also worked for me
 
+```bash
+sclang sc-foxdot-visual.scd
+python3 foxdot-server.py
+```
 
+and then some live editor that sends commands to foxdot or simply run
+
+```python
+from FoxDot import *
+Clock.bpm=150
+p1 >> pads([0, 1, 2, 3])
+d1 >> play("x-o-")
+Go()
 ```
-$ sclang sc-foxdot-visual.scd
-$ python3 foxdot-server.py
-$ ./crt-live-coding -e vim
-```
+
+but for live coding, the vscode extension FoxDot v0.0.5 **yasuyuky** also worked for me. control+shift+p to start foxdot, super+enter to send codeblock
+
+but there are many others
 
 
 ## obs

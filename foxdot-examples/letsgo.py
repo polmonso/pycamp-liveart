@@ -41,8 +41,6 @@ Clock.bpm=120
 a1 >> play('--------', bpm=120)
 a2 >> play('x o xo  x o xoxx', bpm=120)
 
-
-
 a3 >> play('---[--]')
 
 a5 >> play('xtxo')
