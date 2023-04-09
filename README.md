@@ -15,7 +15,16 @@ live art live coding sandbox for pycamp
 
 this can't be quick.
 
-Install or connect to a supercollider server (**hard**)
+Install or connect to a supercollider server (**hard**). I installed 3.10 and it worked
+
+maybe I did this
+
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FABAEF95
+sudo add-apt-repository ppa:supercollider/ppa
+sudo apt-get update
+sudo apt-get install supercollider-ide
+```
 
 The vscode extension FoxDot v0.0.5 **yasuyuky** also worked for me
 
