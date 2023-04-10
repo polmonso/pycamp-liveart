@@ -15,7 +15,19 @@ live art live coding sandbox for pycamp
 
 this can't be quick.
 
-Install or connect to a supercollider server (**hard**). I installed 3.10 and it worked
+what worked:
+```
+Install or connect to a supercollider server (**hard**), even 3.10
+Quarks.install("FoxDot")
+FoxDot.start
+```
+
+on a virtualenv
+
+```
+pip install FoxDot
+```
+run `FoxDot` it should say 'connected to supercollider' and if you send `p1 >> play('-x-o')`
 
 maybe I did this
 
@@ -26,6 +38,7 @@ sudo apt-get update
 sudo apt-get install supercollider-ide
 ```
 
+once you're more advanced you can start it headless and use any client and just the FoxDot server.
 
 ```bash
 sclang sc-foxdot-visual.scd
@@ -60,6 +73,8 @@ but there are many others
 [godot]() gdcsript
 
 [showbot](shoebot.net) `pip install shoebot`
+
+[promap](promap) para mapear
 
 run with `sbot somesbotscript.bot` e.g.
 
